@@ -2,10 +2,10 @@
 
 A complete calendar system for "Das Schwarze Auge" (The Dark Eye) RPG in FoundryVTT with real-time synchronization.
 
-![Calendar Screenshot](misc/module_screenshot.webp)
+![Calendar Screenshot](misc/modul_screenshot.webp)
 
 ## Demo
-![Demo Video](misc/module_video.mp4)
+![Demo Video](misc/modul_video.mp4)
 
 ## Features
 
@@ -43,6 +43,7 @@ You can use the FoundryVTT module store or
 
 - **FoundryVTT**: v12+
 - **Sockets**: Enabled for synchronization
+
 
 
 
