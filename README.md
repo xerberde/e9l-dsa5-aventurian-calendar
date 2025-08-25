@@ -4,9 +4,6 @@ A complete calendar system for "Das Schwarze Auge" (The Dark Eye) RPG in Foundry
 
 ![Calendar Screenshot](misc/modul_screenshot.webp)
 
-## Demo
-![Demo Video](misc/modul_video.webm)
-
 ## Features
 
 - **Complete DSA Calendar** - All 12 god months plus 5 Nameless Days
@@ -43,6 +40,7 @@ You can use the FoundryVTT module store or
 
 - **FoundryVTT**: v12+
 - **Sockets**: Enabled for synchronization
+
 
 
 
