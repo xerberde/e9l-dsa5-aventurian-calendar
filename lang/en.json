@@ -1,0 +1,63 @@
+{
+  "E9L-DSA5-AVENTURIAN-CALENDAR": {
+    "Title": "TDE Calendar",
+    "CurrentDate": "Current Date",
+    "DateFormat": "{day} {month} {year} BF - {weekday}",
+    "YearSuffix": "BF",
+
+    "Months": {
+      "Praiosmond": "Praiosmoon",
+      "Rondramond": "Rondramoon",
+      "Efferdmond": "Efferdmoon",
+      "Traviamond": "Traviamoon",
+      "Boronmond": "Boronmoon",
+      "Hesindemond": "Hesindemoon",
+      "Firunmond": "Firunmoon",
+      "Tsamond": "Tsamoon",
+      "Phexmond": "Phexmoon",
+      "Perainemond": "Perainemoon",
+      "Ingerimmmond": "Ingerimmmoon",
+      "Rahjamond": "Rahjamoon",
+      "NamelessDays": "Nameless Day"
+    },
+
+    "Weekdays": {
+      "Windstag": "Wind's Day",
+      "Erdstag": "Earth's Day",
+      "Markttag": "Market Day",
+      "Praiostag": "Praios' Day",
+      "Rohalstag": "Rohal's Day",
+      "Feuertag": "Fire's Day",
+      "Wassertag": "Water's Day"
+    },
+
+    "MoonPhases": {
+      "ToteMada": "Dead Mada",
+      "AuffuellenderKelch": "Filling Chalice",
+      "Kelch": "Chalice",
+      "ZunehmendesRad": "Waxing Wheel",
+      "Rad": "Wheel",
+      "AbnehmendesRad": "Waning Wheel",
+      "Helm": "Helm",
+      "AbnehmenderHelm": "Waning Helm"
+    },
+
+    "Seasons": {
+      "Sommer": "Summer",
+      "Herbst": "Autumn",
+      "Winter": "Winter",
+      "Fruehling": "Spring"
+    },
+
+    "Navigation": {
+      "TooltipPrevious": "Day - Left Click<br>Month - Left Click + SHIFT<br>Year - Left Click + CTRL",
+      "TooltipNext": "Day - Left Click<br>Month - Left Click + SHIFT<br>Year - Left Click + CTRL"
+    },
+
+    "Chat": {
+      "DateChanged": "{user} changed the date:",
+      "DateChangedValue": "{day} {month} {year} BF",
+      "CalendarTitle": "TDE Calendar"
+    }
+  }
+}
