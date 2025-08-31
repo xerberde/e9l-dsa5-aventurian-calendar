@@ -58,6 +58,12 @@
       "DateChanged": "{user} changed the date:",
       "DateChangedValue": "{day} {month} {year} BF",
       "CalendarTitle": "TDE Calendar"
-    }
+    },
+	
+	"Holidays": {
+	  "NoHolidays": "No holiday",
+	  "TypeWorldly": "Worldly",
+	  "TypeReligious": "Religious"
+}
   }
 }

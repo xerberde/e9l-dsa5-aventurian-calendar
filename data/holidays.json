@@ -1,0 +1,850 @@
+{
+  "feiertage": [
+    {
+      "date": "1. Praios",
+      "name": "Sommersonnenwende",
+      "type": "religiös",
+      "comment": "Tag mit längster Sonnenscheindauer, Beginn des Zwölfgötterjahres. Höchstes Fest des Sonnengottes Praios mit Huldigungen, Prozessionen und goldenen Greifenstandbildern."
+    },
+    {
+      "date": "1. Praios",
+      "name": "Andrafaller Holzfällerspiele",
+      "type": "weltlich",
+      "comment": "Beliebtes Volksfest mit sportlichen Wettbewerben wie Baumstammweitwurf und Balancieren auf treibenden Baumstämmen. Ursprünglich nur unter Andergaster Holzfällern bekannt."
+    },
+    {
+      "date": "1. Praios",
+      "name": "Greifentag",
+      "type": "religiös",
+      "comment": "Jährliche Feier in Hôt-Alem zur Erinnerung an den Sieg über die Truppen des Wudu-Reichs in der Schlacht um Hôt-Elem."
+    },
+    {
+      "date": "2. Praios ",
+      "name": "Praiosfest",
+      "type": "religiös",
+      "comment": "Auch Greifenfest genannt. Fest zu Ehren Praios, an dem meist Erhebungen in den höheren Adelsstand durchgeführt werden."
+    },
+    {
+      "date": "3. Praios",
+      "name": "Praiosfest",
+      "type": "religiös",
+      "comment": "Auch Greifenfest genannt. Fest zu Ehren Praios, an dem meist Erhebungen in den höheren Adelsstand durchgeführt werden."
+    },
+    {
+      "date": "7. Praios",
+      "name": "Horas Erscheinen",
+      "type": "religiös",
+      "comment": "Höchster Tag des Horas-Kultes im Horasreich. Bezieht sich auf Horas' Erscheinen 1492 v. BF, das mythische Datum der Reichsgründung und Ausgangspunkt der alt-bosparanischen Zeitrechnung."
+    },
+    {
+      "date": "7. Praios",
+      "name": "Leomarstag",
+      "type": "religiös",
+      "comment": "In Baburin findet ein Wagenrennen statt. An diesem Tag soll Leomar von Baburin die Göttin Rondra herausgefordert haben."
+    },
+    {
+      "date": "11. Praios",
+      "name": "St. Argelion",
+      "type": "religiös",
+      "comment": "Tag des Heiligen Argelion. In Kuslik und Methumis werden Vorträge über Ethik gehalten."
+    },
+    {
+      "date": "15. Praios bis 16. Praios",
+      "name": "Bürgerheerparade",
+      "type": "weltlich",
+      "comment": "Jährliche Parade in Gareth zur Erinnerung an den Aufmarsch wider Hela-Horas auf dem Brig-Lo Platz. Spießbürger, Stadtgarde und Zünfte präsentieren ihre Waffen."
+    },
+    {
+      "date": "27. Praios",
+      "name": "Gedenktag zur Niederschlagung der Hungerrevolte",
+      "type": "weltlich",
+      "comment": "Auch Tag der Erhebung. Gedenkt der blutigen Niederschlagung der Hungerrevolte am 27. Praios 686 BF in Grangor, bei der 800 Bürger ums Leben kamen."
+    },
+    {
+      "date": "30. Praios",
+      "name": "Jahrestag der Zweiten Dämonenschlacht",
+      "type": "weltlich",
+      "comment": "Feier des göttlichen Sieges gegen Hela-Horas' Dämonen bei Brig-Lo. Tausende Pilger verbrennen symbolisch Puppen und Feuerwerk. Dank an Praios, Rondra, Efferd und Ingerimm."
+    },
+    {
+      "date": "1. Rondra",
+      "name": "Wurmwehr-Fest",
+      "type": "weltlich",
+      "comment": "Jährliches Fest an der bornländischen Drachenzwinge. Gefeiert wird das Erschlagen eines Höhlendrachen in der Vergangenheit der Stadt."
+    },
+    {
+      "date": "1. Rondra",
+      "name": "Bognerfest",
+      "type": "weltlich",
+      "comment": "Fest in Olat zu Ehren des ersten Grafen von Bärwalde, Olat dem Bogner. Bogenschützenturnier für Gemeine und Adelige."
+    },
+    {
+      "date": "2. Rondra",
+      "name": "Flößerfest",
+      "type": "weltlich",
+      "comment": "Jährliches Fest in Bornstein unter Leitung eines Efferd-Geweihten aus Irberod. Teilnehmer messen sich in wilden Spielen."
+    },
+    {
+      "date": "2. Rondra",
+      "name": "Dythlindstag",
+      "type": "weltlich",
+      "comment": "Die Zunft der Bäcker in Gareth veranstaltet eine Prozession zu Ehren der Heiligen Dythlind."
+    },
+    {
+      "date": "5. Rondra",
+      "name": "Tag des Schwurs",
+      "type": "religiös",
+      "comment": "Auch Schwurfest genannt. Höchster Feiertag der Rondra-Kirche in ganz Aventurien. Neue Novizen der Rondra-Kirche werden geweiht."
+    },
+    {
+      "date": "5. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "6. Rondra",
+      "name": "Mittelreichischer Nationalfeiertag",
+      "type": "weltlich",
+      "comment": "Auch Reichsgeburt genannt. Gedenkt der Zerstörung Bosparans und der Gründung des Neuen Reiches."
+    },
+    {
+      "date": "6. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "7. Rondra",
+      "name": "Mittelreichischer Nationalfeiertag",
+      "type": "weltlich",
+      "comment": "Auch Reichsgeburt genannt. Gedenkt der Zerstörung Bosparans und der Gründung des Neuen Reiches."
+    },
+    {
+      "date": "7. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "8. Rondra",
+      "name": "Mittelreichischer Nationalfeiertag",
+      "type": "weltlich",
+      "comment": "Auch Reichsgeburt genannt. Gedenkt der Zerstörung Bosparans und der Gründung des Neuen Reiches."
+    },
+    {
+      "date": "8. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "9. Rondra",
+      "name": "Mittelreichischer Nationalfeiertag",
+      "type": "weltlich",
+      "comment": "Auch Reichsgeburt genannt. Gedenkt der Zerstörung Bosparans und der Gründung des Neuen Reiches."
+    },
+    {
+      "date": "9. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "10. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "11. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "12. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "13. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "14. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "15. Rondra ",
+      "name": "Schwertfest",
+      "type": "religiös",
+      "comment": "Feiertag zu Ehren Rondras zur Unterhaltung des Volkes. An beiden Tagen finden Turniere, Wettkämpfe und rituelle Tieropferungen statt. Auch von der Kor-Kirche begangen."
+    },
+    {
+      "date": "15. Rondra",
+      "name": "Rondrianische Fastenzeit",
+      "type": "religiös",
+      "comment": "Fastenzeit für strenggläubige Rondra-Anhänger vom 5. bis 15. Rondra. Geprägt von Fasten, Waffenübungen, Meditation und Gebet."
+    },
+    {
+      "date": "16. Rondra",
+      "name": "Schwertfest",
+      "type": "religiös",
+      "comment": "Feiertag zu Ehren Rondras zur Unterhaltung des Volkes. An beiden Tagen finden Turniere, Wettkämpfe und rituelle Tieropferungen statt. Auch von der Kor-Kirche begangen."
+    },
+    {
+      "date": "19. Rondra",
+      "name": "Maraskanisches Neujahrsfest",
+      "type": "religiös",
+      "comment": "Symbolisiert Rurs Wurf der Weltenscheibe, die Gror 8192 Jahre später fangen wird. Tag der Ankunft der Beni Rurech auf Maraskan 274 BF."
+    },
+    {
+      "date": "22. Rondra",
+      "name": "Parade am Nordmarkentor",
+      "type": "weltlich",
+      "comment": "Jährliche große Parade unter dem Nordmarkentor seit dem Empfang Kaiser Rauls in Elenvina."
+    },
+    {
+      "date": "22. Rondra",
+      "name": "Tag des Heiligen Leomar",
+      "type": "religiös",
+      "comment": "Auf den Donnersturmfeldern vor Baburin fordert Leomar die Göttin Rondra zum Wagenrennen heraus. Er unterliegt, erhält aber den Donnersturm als Dank."
+    },
+    {
+      "date": "27. Rondra",
+      "name": "Vertreibung Fuldigors",
+      "type": "religiös",
+      "comment": "Feier im Horasreich zur Vertreibung des Drachen Fuldigor von seinem Hort in den Goldfelsen durch den heiligen Horas."
+    },
+    {
+      "date": "30. Rondra",
+      "name": "Tag des Ritterschlags",
+      "type": "weltlich",
+      "comment": "Abschlussfeier der herzoglichen Knappenschule zu Elenvina und Nordmarken."
+    },
+    {
+      "date": "30. Rondra",
+      "name": "Ruhmestag",
+      "type": "religiös",
+      "comment": "In den Nordmarken wird früherer Ruhmestaten gedacht."
+    },
+    {
+      "date": "30. Rondra",
+      "name": "Rattenjagd und Mäusehatz",
+      "type": "weltlich",
+      "comment": "Nagetiere werden in Dörfern am Neunaugensee gesammelt und auf Flößen ausgesetzt. Zeichen gegen den Namenlosen und Ablenkung unheiliger Kreaturen."
+    },
+    {
+      "date": "1. Efferd",
+      "name": "Tag des Wassers",
+      "type": "religiös",
+      "comment": "Höchster Feiertag Efferds an allen Küsten. Bei Thorwalern als Swafnirtag wichtigster Feiertag. Flottenparaden, Lichterprozessionen und Schiffsopfer."
+    },
+    {
+      "date": "1. Efferd",
+      "name": "Barrach-Dân",
+      "type": "weltlich",
+      "comment": "Treffen der Führer aller Gjalsker Sippen in der Halle des Barrach-Dân in Niellyn."
+    },
+    {
+      "date": "1. Efferd",
+      "name": "Flottenparade zu Riva",
+      "type": "weltlich",
+      "comment": "Jährliche Parade der prächtig geschmückten Flotte. Opfergaben auf hoher See."
+    },
+    {
+      "date": "1. Efferd",
+      "name": "Flussfest",
+      "type": "weltlich",
+      "comment": "Fest an den Ufern des Großen Flusses, besonders in Albenhus."
+    },
+    {
+      "date": "1. Efferd",
+      "name": "Flussweih",
+      "type": "weltlich",
+      "comment": "Blüten- und Trankopfer für Efferd am Ufer des Pandlaril, um den launischen Gott milde zu stimmen."
+    },
+    {
+      "date": "1. Efferd",
+      "name": "Bunte Lichter von Perricum",
+      "type": "weltlich",
+      "comment": "Festlicher Laternenumzug und efferdgefällige Wettkämpfe. Organisiert von Helmar Gunsgar."
+    },
+    {
+      "date": "2. Efferd",
+      "name": "Barrach-Dân",
+      "type": "weltlich",
+      "comment": "Treffen der Führer aller Gjalsker Sippen in der Halle des Barrach-Dân in Niellyn."
+    },
+    {
+      "date": "3. Efferd ",
+      "name": "Barrach-Dân",
+      "type": "weltlich",
+      "comment": "Treffen der Führer aller Gjalsker Sippen in der Halle des Barrach-Dân in Niellyn."
+    },
+    {
+      "date": "4. Efferd",
+      "name": "Barrach-Dân",
+      "type": "weltlich",
+      "comment": "Treffen der Führer aller Gjalsker Sippen in der Halle des Barrach-Dân in Niellyn."
+    },
+    {
+      "date": "4. Efferd",
+      "name": "Festtag des Hochheiligen Geron",
+      "type": "religiös",
+      "comment": "Feiertag zu Ehren des Rondraheiligen Geron der Einhändige, Schutzheiliger gegen Ungeheuer."
+    },
+    {
+      "date": "9. Efferd",
+      "name": "4. Rastullahellah",
+      "type": "religiös",
+      "comment": "Tag der Einkehr, einer der fünf hohen Feiertage im Rastullah-Glauben. Traditioneller Ruhetag inmitten der Regenzeit."
+    },
+    {
+      "date": "9. Efferd",
+      "name": "Tag der Befreiung",
+      "type": "weltlich",
+      "comment": "Feier der Ausrufung Belhankas als Republik."
+    },
+    {
+      "date": "15. Efferd",
+      "name": "Heldenwahl",
+      "type": "weltlich",
+      "comment": "Neue Mitglieder werden per Akklamation auf dem Brig-Lo Platz in Gareth in den Rat der Helden aufgenommen."
+    },
+    {
+      "date": "16. Efferd",
+      "name": "Nebelfest",
+      "type": "religiös",
+      "comment": "Geheimer Feiertag der Händler und Diebe. Phex-Dankopfer für Nebel in Straßen und Kundenköpfen. Markiert oft das Ende der Herbstregenzeit in Aranien."
+    },
+    {
+      "date": "17. Efferd, 19. Firun, 21. Ingerimm",
+      "name": "Feuerfest",
+      "type": "weltlich",
+      "comment": "Hochzeitsfest bei den Tapo-Tikaute. Zeitpunkt wird durch den Meteorregen Guachakabu bestimmt."
+    },
+    {
+      "date": "30. Efferd",
+      "name": "Hesinde Prüfungsfest",
+      "type": "religiös",
+      "comment": "Feiertag der Hesinde-Kirche mit ritueller Ordnung der Tempelschätze und Glaubensprüfung. An Magierakademien finden Abschlussprüfungen statt."
+    },
+    {
+      "date": "30. Efferd",
+      "name": "Fischerfest ",
+      "type": "religiös",
+      "comment": "Feiertag der Efferd-Kirche für Fischer und Seefahrer. Opfer und Gebete für Ertrunkene. Rituelles Ende der schiffbaren Jahreszeit."
+    },
+    {
+      "date": "1. Travia",
+      "name": "Fest der eingebrachten Früchte",
+      "type": "religiös",
+      "comment": "Erntefest in den zwölfgöttergläubigen Landen und hoher Travia-Feiertag."
+    },
+    {
+      "date": "1. Travia",
+      "name": "Tag der Heimkehr",
+      "type": "religiös",
+      "comment": "Travia-Feiertag bei Norbarden, in Thorwal und im Bornland. Bekannte werden besucht, Obdachlose beherbergt. Gastfreundschaft steht im Mittelpunkt."
+    },
+    {
+      "date": "1. Travia",
+      "name": "Herbst-Tagundnachtgleiche",
+      "type": "weltlich",
+      "comment": "Tag und Nacht sind gleich lang. Ab jetzt dauern die Nächte länger als die Tage bis zur Frühlings-Tagundnachtgleiche."
+    },
+    {
+      "date": "2. Travia",
+      "name": "Fest der eingebrachten Früchte",
+      "type": "religiös",
+      "comment": "Erntefest in den zwölfgöttergläubigen Landen und hoher Travia-Feiertag."
+    },
+    {
+      "date": "3. Travia",
+      "name": "Fest der eingebrachten Früchte",
+      "type": "religiös",
+      "comment": "Erntefest in den zwölfgöttergläubigen Landen und hoher Travia-Feiertag."
+    },
+    {
+      "date": "4. Travia",
+      "name": "Tag der Helden",
+      "type": "religiös",
+      "comment": "Rondra-Gläubige gedenken dem Erntefestmassaker. Krieger sind von Pflichten freigestellt. Die Rondra-Kirche demonstriert Stärke."
+    },
+    {
+      "date": "7. Travia",
+      "name": "Gedenktag zur Verschleppung von 500 Bürgern",
+      "type": "weltlich",
+      "comment": "Häschertag. 500 Bürger Grangors wurden 745 BF in die Silberminen Angbars verschleppt. Nach Frieden von Kuslik 752 BF kehrten nur ein Drittel zurück."
+    },
+    {
+      "date": "12. Travia",
+      "name": "Tag der Treue",
+      "type": "religiös",
+      "comment": "Beliebter Tag für Traviabund-Abschlüsse. In Thorwal mit Festen und Märkten begangen, Anlass für Schwüre."
+    },
+    {
+      "date": "21. Travia",
+      "name": "Kupperus-Fest",
+      "type": "religiös",
+      "comment": "Fest im Kosch zu Ehren des Heiligen Kupperus. 1011 BF führte Alrik Custodias-Greifax dreitägige Festtage in Gratenfels ein."
+    },
+    {
+      "date": "29. Travia",
+      "name": "Tag des Heiligen Gilborn",
+      "type": "religiös",
+      "comment": "Gedenktag für den Märtyrer und Praios-Geweihten Gilborn von Punin, der von Borbarad getötet wurde."
+    },
+    {
+      "date": "29. Travia",
+      "name": "Gilbornslauf",
+      "type": "weltlich",
+      "comment": "Jährliches Pferderennen in Punin am Tag des Heiligen Gilborn."
+    },
+    {
+      "date": "1. Boron",
+      "name": "Totenfest",
+      "type": "religiös",
+      "comment": "Gedenktag der Boron-Kirche zu Ehren der Verstorbenen."
+    },
+    {
+      "date": "2. Boron",
+      "name": "Tag der Befreiung",
+      "type": "weltlich",
+      "comment": "Feier in Mengbilla. Das größte Fest findet im Serail statt."
+    },
+    {
+      "date": "2. Boron",
+      "name": "Kastenfest",
+      "type": "weltlich",
+      "comment": "Garetische Familien sammeln mit Kästen zusätzliche Wintervorräte bei Nachbarn und durch Tausch. Abends sind Vorräte gleichmäßig verteilt."
+    },
+    {
+      "date": "9. Boron",
+      "name": "Sta. Xaviera",
+      "type": "religiös",
+      "comment": "Gedenkt der Rettung Belhankas im Jahre 0 BF vor der Plünderung durch Garether. Xaviera bewahrte die Stadt."
+    },
+    {
+      "date": "17. Boron",
+      "name": "Tag der Heiligen Dorlen",
+      "type": "religiös",
+      "comment": "In Joborn werden Gäste kostenlos bewirtet."
+    },
+    {
+      "date": "21. Boron",
+      "name": "Khadanstag",
+      "type": "weltlich",
+      "comment": "Jährliche Feier in Bethana zur Erinnerung an die Befreiung im Unabhängigkeitskrieg."
+    },
+    {
+      "date": "22. Boron",
+      "name": "5. Rastullahellah",
+      "type": "religiös",
+      "comment": "Neujahrsfest, bedeutendster der fünf hohen Feiertage im Rastullah-Glauben. Große Feste, Wettspiele, Wahl von Hairanim und Sultanen."
+    },
+    {
+      "date": "22. Boron",
+      "name": "Namensfest",
+      "type": "weltlich",
+      "comment": "In Nostria wird gefallener Helden gedacht. Namen auf Basaltplatte in Yoledamm verewigt. Jährlich wird ein Namenshüter gewählt."
+    },
+    {
+      "date": "23. Boron",
+      "name": "Haltag",
+      "type": "weltlich",
+      "comment": "Ehemaliger Geburtstag Kaiser Hals mit Kaiserparade und Ball. Heute nur noch kleiner Umzug in Gareth."
+    },
+    {
+      "date": "23. Boron",
+      "name": "Rastullahs Erscheinen",
+      "type": "religiös",
+      "comment": "Neujahrsfest im Rastullahglauben am 1. Tag des 1. Gottesnamens im Novadischen Kalender. Geht auf Rastullahs Offenbarung zurück."
+    },
+    {
+      "date": "23. Boron",
+      "name": "St. Cereborn",
+      "type": "religiös",
+      "comment": "Tag des Heiligen Cereborn. In Kuslik findet eine Buchmesse statt."
+    },
+    {
+      "date": "30. Boron",
+      "name": "Tag des Großen Schlafs",
+      "type": "religiös",
+      "comment": "Höchster Feiertag im Al'Anfaner Ritus zu Ehren Borons."
+    },
+    {
+      "date": "5. Hesinde",
+      "name": "Eslaminstag",
+      "type": "religiös",
+      "comment": "In Zorgan wird der Heiligen Eslamin Phraisop und der Seuchenopfer gedacht. Der Perainekirche werden Kerzen geopfert."
+    },
+    {
+      "date": "7. Hesinde",
+      "name": "Rohals Verhüllung",
+      "type": "religiös",
+      "comment": "Magierfeiertag mit Feuerwerk und Illusionen. Fünffacher Schwur zur Wissensmehrung. Gedenkt Rohals Thronverzicht und Verschwinden 589 BF."
+    },
+    {
+      "date": "20. Hesinde bis 29. Hesinde",
+      "name": "Vinsalter Opernball",
+      "type": "weltlich",
+      "comment": "Jährliches Kulturereignis in Vinsalt. Musik-, Theater- und Opernaufführungen, zahlreiche Galerien geöffnet."
+    },
+    {
+      "date": "30. Hesinde",
+      "name": "Erleuchtungsfest",
+      "type": "religiös",
+      "comment": "Abschluss des Hesindejahres, höchster Feiertag im Hesinde-Zyklus. Gebäude werden erleuchtet, Tempelschätze vorgeführt."
+    },
+    {
+      "date": "1. Firun",
+      "name": "Tag der Jagd",
+      "type": "religiös",
+      "comment": "Firun- und Ifirn-Geweihte erflehen Schutz vor Wilder Jagd. Wolfsjagd wird eröffnet, Winterunhold eingefangen. Auch Wintersonnenwende genannt."
+    },
+    {
+      "date": "1. Firun",
+      "name": "Jarlakstag",
+      "type": "religiös",
+      "comment": "In Tobrien wird des Heiligen Jarlak gedacht."
+    },
+    {
+      "date": "1. Firun",
+      "name": "Wintersonnenwende",
+      "type": "weltlich",
+      "comment": "Tag mit kürzester Sonnenscheindauer im Jahr. Feier, dass die Tage wieder länger werden und der Winter enden wird."
+    },
+    {
+      "date": "8. Firun",
+      "name": "Bornländicher Nationalfeiertag",
+      "type": "weltlich",
+      "comment": "Feier der 755 BF gewonnenen Unabhängigkeit vom Mittelreich. Alle 5 Jahre wird der Adelsmarschall gewählt. Verfassung: Igelbrief."
+    },
+    {
+      "date": "11. Firun",
+      "name": "Tag des Hirsches",
+      "type": "religiös",
+      "comment": "Feiertag zu Ehren des Heiligen Mikail. 76 Pfeile werden nach Norden verschossen als Grundlage der heiligen 76 Pfeile."
+    },
+    {
+      "date": "13. Firun",
+      "name": "Hlûthars Fall",
+      "type": "weltlich",
+      "comment": "Boronstag des Heiligen Hlûthar von den Nordmarken."
+    },
+    {
+      "date": "13. Firun",
+      "name": "Tag der ersten Dämonenschlacht",
+      "type": "weltlich",
+      "comment": "Gedenkt der ersten Dämonenschlacht 568 v. BF, als Kaiser Fran-Horas Dämonen gegen Gareth sandte nach dem Zweiten Garether Aufstand."
+    },
+    {
+      "date": "16. Firun",
+      "name": "Tag der Hingabe",
+      "type": "religiös",
+      "comment": "In Aranien wird des Heiligen Ascandear von Baburin gedacht. Frauen erhalten süßes Blütengebäck, im Rahjatempel werden Opfer dargebracht."
+    },
+    {
+      "date": "17. Efferd, 19. Firun, 21. Ingerimm",
+      "name": "Feuerfest",
+      "type": "weltlich",
+      "comment": "Hochzeitsfest bei den Tapo-Tikaute. Zeitpunkt wird durch den Meteorregen Guachakabu bestimmt."
+    },
+    {
+      "date": "30. Firun",
+      "name": "Tag der Ifirn",
+      "type": "religiös",
+      "comment": "Opfer und Gebete für den Frühling zu Ehren Ifirns. In Thorwal wird der Winterunhold verbrannt. In Weiden: Tag der Weißen Maid."
+    },
+    {
+      "date": "1. Tsa",
+      "name": "Regenfest",
+      "type": "religiös",
+      "comment": "Aranischer Feiertag zum Beginn der Regenzeit. Tänze und Opfer an Peraine und Efferd für gute Ernte und milde Hochwasser."
+    },
+    {
+      "date": "5. Tsa",
+      "name": "1. Rastullahellah",
+      "type": "religiös",
+      "comment": "Tag des Fastens. Novadis nehmen weder Nahrung noch Wasser auf und stellen sich extremen körperlichen Belastungen."
+    },
+    {
+      "date": "19. Tsa",
+      "name": "Horasicher Nationalfeiertag",
+      "type": "weltlich",
+      "comment": "Unabhängigkeitstag des Horasreichs. Gedenkt der Trennung vom Neuen Reich. Rondra-Geweihte leiten Paraden und Festspiele."
+    },
+    {
+      "date": "30. Tsa",
+      "name": "Tag der Erneuerung",
+      "type": "religiös",
+      "comment": "Tsa-Feiertag. Sieg des Lebens über den Tod wird gefeiert. Neue Vorhaben beginnen. In Garetien traditionelle Kastenleerung."
+    },
+    {
+      "date": "Tsa",
+      "name": "Herzogsstippen",
+      "type": "weltlich",
+      "comment": "Unverheiratete 24-jährige Männer werden ins Eiswasser gestoßen und müssen durch Kuss erlöst werden. In Trallop Volksfest für alle."
+    },
+    {
+      "date": "1. Phex",
+      "name": "Tag der Erneuerung",
+      "type": "religiös",
+      "comment": "Tsa-Feiertag. Sieg des Lebens über den Tod wird gefeiert. Neue Vorhaben beginnen. In Garetien traditionelle Kastenleerung."
+    },
+    {
+      "date": "9. Phex",
+      "name": "Atmaskotfest",
+      "type": "weltlich",
+      "comment": "Umzug am Jahrestag der Hinrichtung des Thorwalers Atmaskot Blutsäufer, der 925-928 BF die Speicherinsel besetzte."
+    },
+    {
+      "date": "16. Phex",
+      "name": "Tag des Phex",
+      "type": "religiös",
+      "comment": "Geheimer Feiertag der Phex-Gläubigen. Handelspakte mit Phex werden geschlossen, Zinsen eingetrieben."
+    },
+    {
+      "date": "18. Phex",
+      "name": "Basiliskentag",
+      "type": "weltlich",
+      "comment": "Puniner Jugend zieht mit Knüppeln los um Schlangen zu erschlagen, was die Hesinde-Kirche missbilligt."
+    },
+    {
+      "date": "24. Phex",
+      "name": "Glückstag",
+      "type": "religiös",
+      "comment": "Minderer Phex-Feiertag. Geistreiche Späße und Streiche werden gespielt, Glück bei Spiel und Betrügereien herausgefordert."
+    },
+    {
+      "date": "25. Phex",
+      "name": "Katzenglück",
+      "type": "religiös",
+      "comment": "Im aranischen Ras'Lamasshu werden Leckerbissen an Katzen und die Glücksgottheit Rahkatza verteilt. Glückbringend für Neuanfänge."
+    },
+    {
+      "date": "30. Phex",
+      "name": "Versenkungsfest",
+      "type": "religiös",
+      "comment": "Jährlicher Trauertag in Hôt-Alem."
+    },
+    {
+      "date": "1. Peraine",
+      "name": "Saatfest",
+      "type": "religiös",
+      "comment": "Peraine-Feiertag zur Begrüßung des Frühlings. Aus dem Flug der Störche werden Zukunftsdeutungen abgeleitet."
+    },
+    {
+      "date": "1. Peraine",
+      "name": "Frühlings-Tagundnachtgleiche",
+      "type": "weltlich",
+      "comment": "Tag und Nacht sind gleich lang. Ab jetzt scheint die Sonne länger als die Nacht dauert bis zur Herbst-Tagundnachtgleiche."
+    },
+    {
+      "date": "4. Peraine",
+      "name": "Tag der Heiligen Thalionmel",
+      "type": "religiös",
+      "comment": "Gläubige tauchen Waffen und Körper im Fluss Chabab. Gedenkt Thalionmels Rettung Neethas vor einem Heer Wüstenkrieger."
+    },
+    {
+      "date": "18. Peraine",
+      "name": "2. Rastullahellah",
+      "type": "weltich",
+      "comment": "Tag der Treue, einer der fünf hohen Feiertage im Rastullah-Glauben. Traditionelle Treueschwüre für das folgende Jahr."
+    },
+    {
+      "date": "18. Peraine",
+      "name": "2. Rastullahellah",
+      "type": "religiös",
+      "comment": "Tag der Treue, einer der fünf hohen Feiertage im Rastullah-Glauben. Traditionelle Treueschwüre für das folgende Jahr."
+    },
+    {
+      "date": "26. Peraine",
+      "name": "Nacht des Haines",
+      "type": "weltlich",
+      "comment": "Feiertag in Anchopal. Im Heiligen Hain der Peraine werden beim Morgengrauen Blumen und frisches Grün geopfert."
+    },
+    {
+      "date": "27. Peraine",
+      "name": "Maraskantag",
+      "type": "weltlich",
+      "comment": "Feier des Sieges des Mittelreichs über Maraskan."
+    },
+    {
+      "date": "27. Peraine",
+      "name": "Nacht des Haines",
+      "type": "weltlich",
+      "comment": "Feiertag in Anchopal. Im Heiligen Hain der Peraine werden beim Morgengrauen Blumen und frisches Grün geopfert."
+    },
+    {
+      "date": "29. Peraine",
+      "name": "Tag der Zerstörung",
+      "type": "weltlich",
+      "comment": "In Gareth wird der Opfer der Schlacht in den Wolken 1027 BF im Jahr des Feuers gedacht."
+    },
+    {
+      "date": "30. Peraine",
+      "name": "Aranischer Nationalfeiertag",
+      "type": "weltlich ",
+      "comment": "Nationalfeiertag mit Umzügen. Sybia al'Nabab erklärte 995 BF Aranien unabhängig. 1022 BF formelle Anerkennung durch Kaiserreich."
+    },
+    {
+      "date": "1. Ingerimm",
+      "name": "Tag des Feuers",
+      "type": "religiös",
+      "comment": "Angrosch-Feiertag in Angbar: 'Wer dem Feuer widersteht, ist geläutert an Leib und Seele.' Feuer als schöpferische Kraft."
+    },
+    {
+      "date": "7. Ingerimm",
+      "name": "Tag der Heiligen Esmeralda",
+      "type": "",
+      "comment": "In Aranien finden die Prüfungen der Feinschmiede-Lehrlinge statt."
+    },
+    {
+      "date": "7. Ingerimm",
+      "name": "Tag der Abschwörung",
+      "type": "religiös",
+      "comment": "Alle sieben Jahre in Xorlosch. Der Bewahrer der Kraft vollführt rituelle Abschwörung aller Drachendrohungen."
+    },
+    {
+      "date": "8. Ingerimm",
+      "name": "Tag des Aufbruchs",
+      "type": "religiös",
+      "comment": "Angrosch-Anhänger feiern Ende von Schnee und Schmelzwasser. 'Erst wenn das Wasser geht, geht auch das Feuer.'"
+    },
+    {
+      "date": "9. Ingerimm",
+      "name": "Tag der Strudel",
+      "type": "weltlich",
+      "comment": "Feier der Abwendung der Krakenmolchplage in Thorwal, die Prem im Sommer 1025/1026 BF plagte."
+    },
+    {
+      "date": "10. Ingerimm",
+      "name": "Isenhager Donnergrollen",
+      "type": "weltlich",
+      "comment": "Lokaler Feiertag zur Erfindung des Katapults."
+    },
+    {
+      "date": "14. Ingerimm",
+      "name": "Ferbalosch",
+      "type": "weltlich",
+      "comment": "Ambosszwerge in Almada feiern ausgelassen den Sieg über die Drachen Zze'Thas."
+    },
+    {
+      "date": "19. Ingerimm",
+      "name": "Tag der Katastrophe",
+      "type": "religiös",
+      "comment": "Lokaler Feiertag in Abilacht für Heiligen Rhÿs. Gefeiert wird sein Auszug aus Havena nach deren Untergang 702 BF."
+    },
+    {
+      "date": "21. Ingerimm",
+      "name": "Tag der Waffenschmiede",
+      "type": "religiös",
+      "comment": "Höchster Ingerimm-Feiertag mit Zunftfesten. In Angbar Fackelprozession 'Gang zur Flamme'. Kaiser spaltet Felsbrocken mit Kaiserschwert."
+    },
+    {
+      "date": "21. Ingerimm",
+      "name": "Bergfest",
+      "type": "weltlich",
+      "comment": "Feier des Zusammenlebens von Menschen und Zwergen in Albenhus und Isenhag."
+    },
+    {
+      "date": "17. Efferd, 19. Firun, 21. Ingerimm",
+      "name": "Feuerfest",
+      "type": "weltlich",
+      "comment": "Hochzeitsfest bei den Tapo-Tikaute. Zeitpunkt wird durch den Meteorregen Guachakabu bestimmt."
+    },
+    {
+      "date": "28. Ingerimm",
+      "name": "Tag der Heiligen Sulcheya",
+      "type": "religiös",
+      "comment": "Im Radjarat Zorghana werden in Rahja-Tempeln Kunstwerke geopfert und neue für das kommende Jahr begonnen."
+    },
+    {
+      "date": "29. Ingerimm",
+      "name": "Todestag der Heiligen Lechmin von Weiseprein",
+      "type": "religiös",
+      "comment": "Gedenktag in den Nordmarken."
+    },
+    {
+      "date": "1. Rahja",
+      "name": "Fest der Freuden",
+      "type": "religiös",
+      "comment": "7-tägiges Hauptfest der Rahjakirche. Straßenfeste, Kostüm-Umzüge, frischer Wein. Besonders groß in Belhanka und am Yaquir."
+    },
+    {
+      "date": "1. Rahja",
+      "name": "Rahjanal",
+      "type": "religiös",
+      "comment": "Vierwöchiges Fest ab Mitternacht in südaventurischen Städten. Straßenumzüge und Maskenbälle unter Segen der Rahja-Kirche."
+    },
+    {
+      "date": "2. Rahja ",
+      "name": "Fest der Freuden",
+      "type": "religiös",
+      "comment": "7-tägiges Hauptfest der Rahjakirche. Straßenfeste, Kostüm-Umzüge, frischer Wein. Besonders groß in Belhanka und am Yaquir."
+    },
+    {
+      "date": "3. Rahja",
+      "name": "Fest der Freuden",
+      "type": "religiös",
+      "comment": "7-tägiges Hauptfest der Rahjakirche. Straßenfeste, Kostüm-Umzüge, frischer Wein. Besonders groß in Belhanka und am Yaquir."
+    },
+    {
+      "date": "4. Rahja",
+      "name": "Fest der Freuden",
+      "type": "religiös",
+      "comment": "7-tägiges Hauptfest der Rahjakirche. Straßenfeste, Kostüm-Umzüge, frischer Wein. Besonders groß in Belhanka und am Yaquir."
+    },
+    {
+      "date": "5. Rahja",
+      "name": "Fest der Freuden",
+      "type": "religiös",
+      "comment": "7-tägiges Hauptfest der Rahjakirche. Straßenfeste, Kostüm-Umzüge, frischer Wein. Besonders groß in Belhanka und am Yaquir."
+    },
+    {
+      "date": "6. Rahja",
+      "name": "Fest der Freuden",
+      "type": "religiös",
+      "comment": "7-tägiges Hauptfest der Rahjakirche. Straßenfeste, Kostüm-Umzüge, frischer Wein. Besonders groß in Belhanka und am Yaquir."
+    },
+    {
+      "date": "7. Rahja",
+      "name": "Fest der Freuden",
+      "type": "religiös",
+      "comment": "7-tägiges Hauptfest der Rahjakirche. Straßenfeste, Kostüm-Umzüge, frischer Wein. Besonders groß in Belhanka und am Yaquir."
+    },
+    {
+      "date": "30. Rahja",
+      "name": "Jahresscheidfest",
+      "type": "religiös",
+      "comment": "Lichterfest für Mut vor den Namenlosen Tagen. Kerzen werden in alle Winkel getragen, damit Praios' Licht die Dunkelheit erhellt."
+    },
+    {
+      "date": "30. Rahja",
+      "name": "Rahjasegen",
+      "type": "religiös",
+      "comment": "In Aranien werden Rosen in die Häuser gestellt zum Schutz während der Tage des Namenlosen."
+    },
+    {
+      "date": "30. Rahja",
+      "name": "Reinigungsfest",
+      "type": "religiös",
+      "comment": "Zweiter Feiertag im Hesinde-Zyklus zur Vorbereitung auf das neue Jahr. Rituelle Reinigung von Körper, Geist, Haus und Tempel."
+    },
+    {
+      "date": "1. Namenloser",
+      "name": "3. Rastullahellah",
+      "type": "religiös",
+      "comment": "Tag der Blutrache, einer der fünf hohen Feiertage im Rastullah-Glauben. Vor allem von jungen männlichen Novadis gefeiert."
+    }
+  ]
+}

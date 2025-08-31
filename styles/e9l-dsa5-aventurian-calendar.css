@@ -1,3 +1,8 @@
+/* ========================================
+   DSA5 Aventurian Calendar - Complete CSS
+   ======================================== */
+
+/* Basis Calendar Overlay */
 .e9l-dsa5-aventurian-calendar-overlay {
   position: fixed;
   bottom: 0;
@@ -121,6 +126,22 @@
   line-height: 20px;
 }
 
+/* Datum-Text für Holiday-Tooltip */
+.calendar-date-text {
+  cursor: inherit;  /* Kein spezieller Cursor */
+  position: relative;
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 3px;
+  transition: none;  /* Keine Transition */
+}
+
+.calendar-date-text:hover {
+  /* Kein Hover-Effekt */
+}
+
+/* Entfernt - Feiertags-Indikator wird nicht mehr verwendet */
+
 .calendar-symbol {
   opacity: 0.9;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
@@ -136,7 +157,165 @@
   box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.35);
 }
 
-/* Tooltips */
+/* ========================================
+   Holiday Tooltip Styles
+   ======================================== */
+
+.holiday-tooltip-wrapper {
+  position: fixed;
+  z-index: 10000;
+  pointer-events: auto;
+  transform: translateX(-50%);
+  animation: tooltipFadeIn 0.2s ease;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.holiday-tooltip {
+  background: rgba(20, 20, 20, 0.95);  /* Gleicher Hintergrund wie Standard-Tooltips */
+  border: 1px solid rgba(255, 255, 255, 0.2);  /* Gleicher Border wie Standard-Tooltips */
+  border-radius: 4px;
+  padding: 12px 14px;
+  min-width: 280px;  /* Etwas breiter für größeren Text */
+  max-width: 380px;
+  min-height: 120px;  /* Höher für 4 Zeilen und größeren Text */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  font-family: "Signika", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pfeil nach unten für Holiday-Tooltip */
+.holiday-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgba(20, 20, 20, 0.95);
+}
+
+.holiday-tooltip::before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid rgba(255, 255, 255, 0.2);
+}
+
+.holiday-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  /* Border entfernt für cleanes Design */
+}
+
+.holiday-type {
+  font-size: 16px;
+  color: rgba(160, 160, 160, 0.4);  /* Gleiche Farbe wie Hauptnavigation */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.holiday-type i {
+  font-size: 16px;
+}
+
+.holiday-name {
+  flex: 1;
+  font-weight: 600;
+  font-size: 16px;  /* Größerer Text */
+  color: rgba(240, 240, 240, 0.95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.holiday-comment {
+  font-size: 14px;  /* Größerer Text */
+  line-height: 1.5;
+  color: rgba(210, 210, 210, 0.85);
+  text-align: justify;
+  word-wrap: break-word;
+  hyphens: none;  /* Keine Silbentrennung */
+  margin-top: 8px;
+  min-height: 84px;  /* 4 Zeilen * 21px (line-height 1.5 * font-size 14px) */
+  max-height: 84px;  /* Feste Höhe für 4 Zeilen */
+  overflow-y: auto;  /* Scrollbar bei längerem Text */
+  overflow-x: hidden;
+  flex: 1;  /* Füllt den verfügbaren Raum */
+}
+
+.holiday-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 0;  /* Kein Padding oben */
+  /* Border entfernt */
+  gap: 10px;
+}
+
+.holiday-nav-btn {
+  background: transparent;
+  border: none;
+  color: rgba(160, 160, 160, 0.4);  /* Gleiche Farbe wie Hauptnavigation */
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.holiday-nav-btn:hover:not([disabled]) {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(200, 200, 200, 0.6);
+  transform: scale(1.05);
+}
+
+.holiday-nav-btn:active:not([disabled]) {
+  transform: scale(0.95);
+}
+
+.holiday-nav-btn[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+  color: rgba(160, 160, 160, 0.2);
+}
+
+/* Entfernt - Counter wird nicht mehr verwendet */
+
+/* ========================================
+   Standard Tooltips
+   ======================================== */
+
 .calendar-tooltip {
   position: relative;
   cursor: inherit;
@@ -201,6 +380,10 @@
   bottom: calc(100% + 6px);
   left: 12px;
 }
+
+/* ========================================
+   Namenlose Tage - Nebel-Effekt
+   ======================================== */
 
 /* Unregelmäßiger lokaler Nebel-Effekt um die Calendar-UI */
 .nameless-days-fog .e9l-dsa5-aventurian-calendar-overlay::before {
@@ -313,7 +496,10 @@
   color: rgba(160, 160, 180, 0.9);
 }
 
-/* Chat-Nachricht Styling */
+/* ========================================
+   Chat-Nachrichten Styling
+   ======================================== */
+
 .e9l-dsa5-aventurian-calendar-notification {
   padding: 8px 12px;
   background: linear-gradient(135deg, rgba(44, 44, 44, 0.1) 0%, rgba(26, 26, 26, 0.15) 100%);
@@ -333,13 +519,19 @@
   font-weight: 600;
 }
 
-/* Accessibility */
+/* ========================================
+   Accessibility
+   ======================================== */
+
 .calendar-btn:focus {
   outline: 1px solid rgba(0, 120, 212, 0.8);
   outline-offset: 1px;
 }
 
-/* Responsive Design */
+/* ========================================
+   Responsive Design
+   ======================================== */
+
 @media (max-width: 768px) {
   .e9l-dsa5-aventurian-calendar-trapez {
     min-width: 300px;
@@ -373,6 +565,12 @@
   .calendar-btn.calendar-tooltip::after {
     max-width: 180px;
     font-size: 9px;
+  }
+  
+  /* Holiday-Tooltip Anpassungen */
+  .holiday-tooltip {
+    min-width: 220px;
+    max-width: 300px;
   }
 }
 
@@ -413,6 +611,21 @@
     font-size: 8px;
   }
   
+  /* Holiday-Tooltip Anpassungen */
+  .holiday-tooltip {
+    min-width: 200px;
+    max-width: 260px;
+    font-size: 11px;
+  }
+  
+  .holiday-name {
+    font-size: 13px;
+  }
+  
+  .holiday-comment {
+    font-size: 11px;
+  }
+  
   /* Tooltips auf Touch-Geräten deaktivieren */
   @media (hover: none) {
     .calendar-tooltip::after,
@@ -420,4 +633,5 @@
       display: none;
     }
   }
+}
 }

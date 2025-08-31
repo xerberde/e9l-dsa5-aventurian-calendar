@@ -58,6 +58,12 @@
       "DateChanged": "{user} hat das Datum geändert:",
       "DateChangedValue": "{day} {month} {year} BF",
       "CalendarTitle": "DSA Kalender"
-    }
+    },
+	
+	"Holidays": {
+	  "NoHolidays": "Kein Feiertag",
+	  "TypeWorldly": "Weltlich",
+	  "TypeReligious": "Religiös"
+}
   }
 }

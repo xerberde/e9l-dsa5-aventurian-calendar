@@ -5,14 +5,12 @@
   "version": "1.0.1",
   "compatibility": {
     "minimum": "12",
-    "verified": "12",
-    "maximum": "13"
+    "verified": "12"
   },
   "authors": [
     {
-      "name": "xerber",
-      "discord": "xerberde",
-      "url": "https://www.ecosquirrel.de"
+      "name": "xerberde",
+      "discord": "xerberde"
     }
   ],
   "esmodules": [
@@ -36,19 +34,8 @@
       "path": "lang/en.json"
     }
   ],
-  "relationships": {
-    "systems": [
-      {
-        "id": "dsa5",
-        "type": "system",
-        "compatibility": {
-          "minimum": "5.0.0"
-        }
-      }
-    ]
-  },
   "socket": true,
-  "license": "MIT",
+  "license": "MIT"
   "url": "https://github.com/xerberde/e9l-dsa5-aventurian-calendar",
   "manifest": "https://raw.githubusercontent.com/xerberde/e9l-dsa5-aventurian-calendar/refs/heads/main/module.json",
   "download": "https://github.com/xerberde/e9l-dsa5-aventurian-calendar/archive/refs/heads/main.zip"
