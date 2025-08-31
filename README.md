@@ -22,7 +22,7 @@ You can use the FoundryVTT module store or
 
 1. Open FoundryVTT **Add-on Modules**
 2. Click **Install Module**
-3. Paste manifest URL: `[https://github.com/xerberde/e9l-dsa5-aventurian-calendar/archive/refs/heads/main.zip]`
+3. Paste manifest URL: `[https://raw.githubusercontent.com/xerberde/e9l-dsa5-aventurian-calendar/refs/heads/main/module.json]`
 4. Enable in **Manage Modules**
 
 ## Usage
@@ -53,3 +53,4 @@ You can use the FoundryVTT module store or
 
 - **FoundryVTT**: v12+
 - **Sockets**: Enabled for synchronization
+
