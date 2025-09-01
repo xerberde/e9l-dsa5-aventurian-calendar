@@ -5,8 +5,11 @@ class CalendarUI {
     this.currentDate = this.loadDate();
     this.isUpdating = false;
     this.holidays = [];
+    this.events = [];  // NEU: Events Array
     this.currentHolidayIndex = 0;
+    this.currentEventIndex = 0;  // NEU: Event Index
     this.loadHolidays();
+    this.loadEvents();  // NEU: Events laden
   }
   
   async loadHolidays() {
@@ -31,6 +34,244 @@ class CalendarUI {
       console.error('DSA Calendar | Verwende Fallback - leeres Array');
       this.holidays = [];
     }
+  }
+  
+  // NEU: Events laden
+  async loadEvents() {
+    console.log('DSA Calendar | Versuche Events zu laden...');
+    try {
+      const url = 'modules/e9l-dsa5-aventurian-calendar/data/events.json';
+      console.log('DSA Calendar | Lade Events von URL:', url);
+      
+      const response = await fetch(url);
+      console.log('DSA Calendar | Events Response Status:', response.status);
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      this.events = data || [];
+      console.log('DSA Calendar | Events erfolgreich geladen:', this.events.length);
+      console.log('DSA Calendar | Erste 3 Events:', this.events.slice(0, 3));
+    } catch (error) {
+      console.error('DSA Calendar | FEHLER beim Laden der Events:', error);
+      console.error('DSA Calendar | Verwende Fallback - leeres Array');
+      this.events = [];
+    }
+  }
+  
+  // NEU: Parse Event-Datum zu Tag und Monat
+  parseEventDate(dateStr) {
+    // Format: "21 PRA" = 21. Praios
+    const monthMap = {
+      'PRA': 'Praiosmond',
+      'RON': 'Rondramond',
+      'EFF': 'Efferdmond',
+      'TRA': 'Traviamond',
+      'BOR': 'Boronmond',
+      'HES': 'Hesindemond',
+      'FIR': 'Firunmond',
+      'TSA': 'Tsamond',
+      'PHE': 'Phexmond',
+      'PER': 'Perainemond',
+      'ING': 'Ingerimmmond',
+      'RAH': 'Rahjamond',
+      'NAM': 'Namenloser Tag'
+    };
+    
+    const parts = dateStr.trim().split(' ');
+    if (parts.length !== 2) return null;
+    
+    const day = parseInt(parts[0]);
+    const monthCode = parts[1];
+    const month = monthMap[monthCode];
+    
+    if (!month || isNaN(day)) return null;
+    
+    return { day, month };
+  }
+  
+  // NEU: Filtere Events - nur gleicher Tag/Monat in vergangenen Jahren
+  getRecentEvents() {
+    const currentDay = this.currentDate.day;
+    const currentMonth = this.currentDate.month;
+    const currentMonthIndex = this.calendar.normalizeMonthIndex(currentMonth);
+    const currentYear = this.currentDate.year;
+    const currentDayOfYear = this.calendar.dateToDayOfYear(currentDay, currentMonthIndex, currentYear);
+    
+    const filteredEvents = this.events.filter(event => {
+      const eventDate = this.parseEventDate(event.d);
+      if (!eventDate) return false;
+      
+      // Event muss am gleichen Tag und Monat stattgefunden haben
+      if (eventDate.day !== currentDay || eventDate.month !== currentMonth) {
+        return false;
+      }
+      
+      const eventYear = parseInt(event.y);
+      
+      // Event muss in der Vergangenheit liegen
+      if (eventYear >= currentYear) return false;
+      
+      // Berechne wie viele Jahre zurück das Event liegt
+      const yearDiff = currentYear - eventYear;
+      
+      // Wenn wir im ersten Halbjahr sind (Tag 1-180), 
+      // dann zeige auch Events aus dem Vorjahr
+      // Ansonsten nur Events, die mindestens 1 Jahr zurückliegen
+      if (currentDayOfYear <= 180) {
+        // Im ersten Halbjahr: Zeige alle vergangenen Jahre
+        return yearDiff >= 1;
+      } else {
+        // Im zweiten Halbjahr: Zeige nur Events die mindestens 6 Monate alt sind
+        // Das bedeutet praktisch: alle vergangenen Jahre
+        return yearDiff >= 1;
+      }
+    });
+    
+    // Sortiere nach Jahr (neueste zuerst)
+    filteredEvents.sort((a, b) => {
+      return parseInt(b.y) - parseInt(a.y);
+    });
+    
+    return filteredEvents;
+  }
+  
+  // NEU: Erstelle Event-Tooltip
+  createEventTooltip(events, index = 0) {
+    if (!events || events.length === 0) return '';
+    
+    const event = events[index];
+    const eventDate = this.parseEventDate(event.d);
+    const yearSuffix = game.i18n.localize("E9L-DSA5-AVENTURIAN-CALENDAR.YearSuffix");
+    
+    // Symbol für historische Events
+    const typeIcon = '<i class="fas fa-scroll"></i>';
+    
+    const prevDisabled = index === 0 ? 'disabled' : '';
+    const nextDisabled = index === events.length - 1 ? 'disabled' : '';
+    
+    // Zeige Navigation nur wenn mehr als 1 Event vorhanden
+    const showNavigation = events.length > 1;
+    
+    // Formatiere das Datum
+    const formattedDate = `${event.y} ${yearSuffix} - ${eventDate.day}. ${eventDate.month}`;
+    
+    return `
+      <div class="event-tooltip" data-events='${JSON.stringify(events).replace(/'/g, "&apos;")}' data-index="${index}">
+        <div class="event-header">
+          <span class="event-type">${typeIcon}</span>
+          <span class="event-date">${formattedDate}</span>
+        </div>
+        <div class="event-title">${event.t}</div>
+        <div class="event-comment">${event.c || ''}</div>
+        ${showNavigation ? `
+          <div class="event-navigation">
+            <button class="event-nav-btn event-prev" ${prevDisabled}>
+              <i class="fas fa-arrow-circle-left"></i>
+            </button>
+            <button class="event-nav-btn event-next" ${nextDisabled}>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }
+  
+  // NEU: Event-Tooltip anhängen
+  attachEventTooltip() {
+    // Erweitere den Hover-Bereich auf Jahr UND Wochentag
+    const yearWeekdaySelector = '.calendar-year-weekday';
+    const yearWeekdayElement = this.element.find(yearWeekdaySelector);
+    console.log('DSA Calendar | AttachEventTooltip - Element gefunden:', yearWeekdayElement.length);
+    
+    let tooltipTimeout;
+    let tooltipElement;
+    
+    yearWeekdayElement.on('mouseenter', (e) => {
+      console.log('DSA Calendar | Mouse Enter auf Jahr/Wochentag');
+      console.log('DSA Calendar | Aktuelles UI-Datum:', this.currentDate);
+      
+      // Verzögerung vor dem Anzeigen (300ms)
+      tooltipTimeout = setTimeout(() => {
+        console.log('DSA Calendar | Suche Events für aktuelles Datum');
+        const recentEvents = this.getRecentEvents();
+        console.log('DSA Calendar | Gefundene Events:', recentEvents.length);
+        
+        if (recentEvents.length > 0) {
+          console.log('DSA Calendar | Erstelle Tooltip für Events');
+          
+          // Entferne existierenden Tooltip
+          $('.event-tooltip-wrapper').remove();
+          
+          // Erstelle neuen Tooltip
+          const tooltipHTML = this.createEventTooltip(recentEvents, 0);
+          console.log('DSA Calendar | Event Tooltip HTML erstellt');
+          
+          tooltipElement = $(`
+            <div class="event-tooltip-wrapper">
+              ${tooltipHTML}
+            </div>
+          `);
+          
+          // Füge Tooltip zum Body hinzu
+          $('body').append(tooltipElement);
+          console.log('DSA Calendar | Event Tooltip zum Body hinzugefügt');
+          
+          // Positioniere den Tooltip über dem Jahr/Wochentag
+          const rect = yearWeekdayElement[0].getBoundingClientRect();
+          const tooltipHeight = tooltipElement.outerHeight();
+          console.log('DSA Calendar | Position berechnet - Rect:', rect, 'Height:', tooltipHeight);
+          
+          tooltipElement.css({
+            left: rect.left + (rect.width / 2),
+            top: rect.top - tooltipHeight - 10
+          });
+          
+          // Event-Handler für Navigation zwischen mehreren Events
+          tooltipElement.on('click', '.event-nav-btn:not([disabled])', function(e) {
+            e.stopPropagation();
+            const tooltip = $(this).closest('.event-tooltip');
+            const events = JSON.parse(tooltip.attr('data-events').replace(/&apos;/g, "'"));
+            let currentIndex = parseInt(tooltip.attr('data-index'));
+            
+            if ($(this).hasClass('event-prev')) {
+              currentIndex = Math.max(0, currentIndex - 1);
+            } else {
+              currentIndex = Math.min(events.length - 1, currentIndex + 1);
+            }
+            
+            // Update Tooltip-Inhalt mit neuem Event
+            const calendarUI = tooltipElement.data('calendarUI');
+            const newContent = calendarUI.createEventTooltip(events, currentIndex);
+            tooltipElement.html(newContent);
+          });
+          
+          // Speichere CalendarUI Referenz für Event-Handler
+          tooltipElement.data('calendarUI', this);
+        } else {
+          console.log('DSA Calendar | Keine Events in den letzten 6 Monaten gefunden');
+        }
+      }, 300);
+    });
+    
+    yearWeekdayElement.on('mouseleave', () => {
+      clearTimeout(tooltipTimeout);
+      
+      // Verzögertes Entfernen, falls Maus zum Tooltip bewegt wird
+      setTimeout(() => {
+        if (!$('.event-tooltip-wrapper:hover').length) {
+          $('.event-tooltip-wrapper').remove();
+        }
+      }, 100);
+    });
+    
+    // Entferne Tooltip wenn Maus ihn verlässt
+    $(document).on('mouseleave', '.event-tooltip-wrapper', function() {
+      $(this).remove();
+    });
   }
   
   getHolidaysForDate(day, month) {
@@ -315,6 +556,7 @@ class CalendarUI {
     // Prüfe ob Feiertage für dieses Datum existieren
     const holidays = this.getHolidaysForDate(this.currentDate.day, this.currentDate.month);
     
+    // GEÄNDERT: Jahr mit eigener Klasse für Event-Tooltip
     this.element = $(`
       <div id="e9l-dsa5-aventurian-calendar-overlay" class="e9l-dsa5-aventurian-calendar-overlay">
         <div class="e9l-dsa5-aventurian-calendar-trapez">
@@ -329,7 +571,7 @@ class CalendarUI {
               <span class="calendar-symbol calendar-tooltip" data-tooltip="${moonTooltip}">${moonPhase.symbol}</span> 
               - 
               <span class="calendar-symbol calendar-tooltip" data-tooltip="${seasonTooltip}">${season.symbol}</span> 
-              ${this.currentDate.year} ${yearSuffix} - ${weekday}
+              <span class="calendar-year-weekday">${this.currentDate.year} ${yearSuffix} - ${weekday}</span>
             </span>
             <button class="calendar-btn calendar-next calendar-tooltip" data-tooltip="${nextButtonTooltip}">
               <i class="fas fa-arrow-circle-right"></i>
@@ -346,6 +588,9 @@ class CalendarUI {
     
     // Füge Holiday-Tooltip Event-Handler hinzu
     this.attachHolidayTooltip();
+    
+    // NEU: Füge Event-Tooltip Event-Handler hinzu
+    this.attachEventTooltip();
     
     // Nebel-Effekt beim ersten Laden prüfen
     this.updateNamelessDaysFog();
@@ -386,6 +631,7 @@ class CalendarUI {
     // Prüfe ob Feiertage für dieses Datum existieren
     const holidays = this.getHolidaysForDate(this.currentDate.day, this.currentDate.month);
     
+    // GEÄNDERT: Jahr mit eigener Klasse für Event-Tooltip
     this.element.find('.calendar-date').html(`
       <span class="calendar-date-text">
         ${this.currentDate.day} ${this.currentDate.month}
@@ -393,11 +639,14 @@ class CalendarUI {
       <span class="calendar-symbol calendar-tooltip" data-tooltip="${moonPhase.name}">${moonPhase.symbol}</span> 
       - 
       <span class="calendar-symbol calendar-tooltip" data-tooltip="${season.name}">${season.symbol}</span> 
-      ${this.currentDate.year} ${yearSuffix} - ${weekday}
+      <span class="calendar-year-weekday">${this.currentDate.year} ${yearSuffix} - ${weekday}</span>
     `);
     
     // Tooltip-Events neu anhängen nach Update
     this.attachHolidayTooltip();
+    
+    // NEU: Event-Tooltip-Events neu anhängen nach Update
+    this.attachEventTooltip();
     
     // Nebel-Effekt für Namenlose Tage
     this.updateNamelessDaysFog();
@@ -423,6 +672,7 @@ class CalendarUI {
     }
     // Entferne auch alle Tooltips beim Zerstören
     $('.holiday-tooltip-wrapper').remove();
+    $('.event-tooltip-wrapper').remove();  // NEU: Auch Event-Tooltips entfernen
   }
 }
 

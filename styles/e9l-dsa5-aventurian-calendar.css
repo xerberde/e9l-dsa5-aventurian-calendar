@@ -158,6 +158,238 @@
 }
 
 /* ========================================
+   Event Tooltip Styles (NEU)
+   ======================================== */
+
+.event-tooltip-wrapper {
+  position: fixed;
+  z-index: 10000;
+  pointer-events: auto;
+  transform: translateX(-50%);
+  animation: tooltipFadeIn 0.2s ease;
+}
+
+.event-tooltip {
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  padding: 14px 16px;
+  min-width: 350px;  /* Breiter für längere Texte */
+  max-width: 500px;  /* Maximale Breite */
+  min-height: 150px;  /* Höher für mehr Content */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  font-family: "Signika", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pfeil nach unten für Event-Tooltip */
+.event-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid rgba(20, 20, 20, 0.95);
+}
+
+.event-tooltip::before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid rgba(255, 255, 255, 0.2);
+}
+
+.event-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+}
+
+.event-type {
+  font-size: 16px;
+  color: rgba(200, 170, 100, 0.7);  /* Goldene Farbe für historische Events */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.event-type i {
+  font-size: 16px;
+}
+
+.event-date {
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(200, 200, 200, 0.95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+}
+
+.event-title {
+  font-weight: 600;
+  font-size: 16px;  /* Größerer Text wie bei Holiday-Tooltip */
+  color: rgba(240, 240, 240, 0.95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.event-comment {
+  font-size: 14px;  /* Gleiche Größe wie Holiday-Tooltip */
+  line-height: 1.5;
+  color: rgba(210, 210, 210, 0.85);
+  text-align: justify;
+  word-wrap: break-word;
+  hyphens: none;
+  margin-top: 8px;
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 200px;  /* Maximale Höhe für Scrollbar */
+  padding-right: 5px;  /* Platz für Scrollbar */
+}
+
+/* Schöne Scrollbar für Event-Comment */
+.event-comment::-webkit-scrollbar {
+  width: 6px;
+}
+
+.event-comment::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.event-comment::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.event-comment::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.event-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 10px;
+}
+
+.event-nav-btn {
+  background: transparent;
+  border: none;
+  color: rgba(160, 160, 160, 0.4);
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-nav-btn:hover:not([disabled]) {
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(200, 200, 200, 0.6);
+  transform: scale(1.05);
+}
+
+.event-nav-btn:active:not([disabled]) {
+  transform: scale(0.95);
+}
+
+.event-nav-btn[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+  color: rgba(160, 160, 160, 0.2);
+}
+
+/* Jahr-Wochentag-Element Hover-Effekt */
+.calendar-year-weekday {
+  cursor: pointer;
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: background 0.2s ease;
+}
+
+.calendar-year-weekday:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ========================================
+   Responsive Design für Event-Tooltip
+   ======================================== */
+
+@media (max-width: 768px) {
+  .event-tooltip {
+    min-width: 280px;
+    max-width: 400px;
+    font-size: 12px;
+  }
+  
+  .event-date {
+    font-size: 13px;
+  }
+  
+  .event-name {
+    font-size: 14px;
+  }
+  
+  .event-comment {
+    font-size: 12px;
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-tooltip {
+    min-width: 240px;
+    max-width: 320px;
+    padding: 10px 12px;
+  }
+  
+  .event-header {
+    gap: 8px;
+  }
+  
+  .event-date {
+    font-size: 12px;
+  }
+  
+  .event-name {
+    font-size: 13px;
+  }
+  
+  .event-comment {
+    font-size: 11px;
+    max-height: 120px;
+  }
+}
+
+/* ========================================
    Holiday Tooltip Styles
    ======================================== */
 

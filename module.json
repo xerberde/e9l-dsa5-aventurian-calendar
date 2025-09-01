@@ -36,7 +36,4 @@
   ],
   "socket": true,
   "license": "MIT"
-  "url": "https://github.com/xerberde/e9l-dsa5-aventurian-calendar",
-  "manifest": "https://raw.githubusercontent.com/xerberde/e9l-dsa5-aventurian-calendar/refs/heads/main/module.json",
-  "download": "https://github.com/xerberde/e9l-dsa5-aventurian-calendar/archive/refs/heads/main.zip"
 }

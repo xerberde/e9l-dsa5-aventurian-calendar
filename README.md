@@ -1,56 +1,55 @@
-# DSA5 Aventurian Calendar
+# DSA Calendar - FoundryVTT Modul
 
-A complete calendar system for "Das Schwarze Auge" (The Dark Eye) RPG in FoundryVTT with real-time synchronization.
-
-## Images
-![FoundryVTT Screenshot](misc/foundryvtt_screenshot.webp)
-
-![Closeup](misc/modul_screenshot.webp)
+Ein vollständiges Kalendersystem für "Das Schwarze Auge" (DSA) in FoundryVTT.
 
 ## Features
 
-- **Complete DSA Calendar** - All 12 god months plus 5 Nameless Days
-- **Holiday System** - 140+ Aventurian holidays with detailed tooltips
-- **Real-time Sync** - GM & Player changes instantly appear for all players
-- **Dynamic Elements** - Moon phases, seasons, and weekdays
-- **Atmospheric Effects** - Special fog effect during Nameless Days
-- **Multilingual** - German and English support
+- **Vollständiges DSA-Kalendersystem** mit allen 12 Göttermonaten
+- **Trapez-Design** im dunklen FoundryVTT-Stil
+- **Dynamische Anzeige** von Mondphasen und Jahreszeiten
+- **Flexible Navigation** mit Modifier-Keys
+- **Weltweite Synchronisation** des Datums
+- **Responsive Design** für verschiedene Bildschirmgrößen
 
 ## Installation
 
-You can use the FoundryVTT module store or
+1. Lade das Modul herunter und entpacke es in deinen FoundryVTT `modules`-Ordner
+2. Aktiviere das Modul in den Moduleinstellungen
+3. Das Kalender-Overlay erscheint automatisch für Spielleiter
 
-1. Open FoundryVTT **Add-on Modules**
-2. Click **Install Module**
-3. Paste manifest URL: `[https://raw.githubusercontent.com/xerberde/e9l-dsa5-aventurian-calendar/refs/heads/main/module.json]`
-4. Enable in **Manage Modules**
-
-## Usage
+## Bedienung
 
 ### Navigation
+- **Klick**: ±1 Tag
+- **Shift + Klick**: ±1 Monat  
+- **Strg + Klick**: ±1 Jahr
 
-- **Click**: ±1 Day
-- **Shift + Click**: ±1 Month
-- **Ctrl + Click**: ±1 Year
+### Anzeige
+- **Datum**: Im Format "Tag Monat, Jahr BF - Wochentag"
+- **Jahreszeit**: Dynamisches Symbol (☀️🍂❄️🌸)
+- **Mondphase**: Dynamisches Symbol (🌑🌒🌓🌔🌕🌖🌗🌘)
 
-### Holiday Tooltips
+## DSA-Kalendersystem
 
-- **Hover** over the date to see holidays
-- Navigate between multiple holidays with arrow buttons
-- Shows holiday type (religious/worldly) and description
-- Includes all canonical DSA holidays and festivals
+Das Modul implementiert das vollständige DSA-Kalendersystem:
 
-## DSA Calendar System
+- **12 Monate** à 30 Tage (Göttermond)
+- **5 Namenlose Tage** (dem Namenlosen geweiht)
+- **7-Tage-Woche** mit durchlaufender Zählung
+- **28-tägiger Mondzyklus** mit 8 Phasen
+- **Feste Jahreszeitenanfänge**
 
-- **12 Months** of 30 days each
-- **5 Nameless Days** at year end
-- **7-Day Week** with Aventurian weekdays
-- **28-Day Lunar Cycle** with 8 moon phases
-- **4 Seasons** with dynamic symbols
-- **140+ Holidays** from official DSA lore
+## Technische Details
 
-## Requirements
+- **Kompatibilität**: FoundryVTT v12+
+- **Weltdaten**: Das aktuelle Datum wird weltenweit gespeichert
+- **Performance**: Schlanker Code ohne externe Abhängigkeiten
+- **Zugänglichkeit**: Vollständig tastaturzugänglich
 
-- **FoundryVTT**: v12+
-- **Sockets**: Enabled for synchronization
+## Support
 
+Bei Problemen oder Fragen erstelle bitte ein Issue im GitHub-Repository.
+
+## Lizenz
+
+MIT License - Siehe LICENSE-Datei für Details.
