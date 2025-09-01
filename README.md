@@ -4,8 +4,8 @@ Ein vollständiges Kalendersystem für "Das Schwarze Auge" (DSA) in FoundryVTT.
 
 ## Features
 
-- **Vollständiges DSA-Kalendersystem** mit allen 12 Göttermonaten
-- **Trapez-Design** im dunklen FoundryVTT-Stil
+- **Vollständiges DSA-Kalendersystem** mit allen 12 Göttermonaten udn Namenlosen Taen
+- **Design** im dunklen FoundryVTT-Stil
 - **Dynamische Anzeige** von Mondphasen und Jahreszeiten
 - **Flexible Navigation** mit Modifier-Keys
 - **Weltweite Synchronisation** des Datums
@@ -38,18 +38,22 @@ Das Modul implementiert das vollständige DSA-Kalendersystem:
 - **7-Tage-Woche** mit durchlaufender Zählung
 - **28-tägiger Mondzyklus** mit 8 Phasen
 - **Feste Jahreszeitenanfänge**
+- **Anzeige von Feiertagen an dem aktuellen Tag**
+- **Anzeige von vergangen Events zurück bis 0 BF für den aktuellen Tag**
+- **Events werden Rückwirkend 6 Monate nach dem aktuellen Tag angezeigt... Nachrichten dauern hat ein bisschen bis sie zum Helden kommen.**
 
 ## Technische Details
 
 - **Kompatibilität**: FoundryVTT v12+
 - **Weltdaten**: Das aktuelle Datum wird weltenweit gespeichert
 - **Performance**: Schlanker Code ohne externe Abhängigkeiten
-- **Zugänglichkeit**: Vollständig tastaturzugänglich
+
 
 ## Support
 
 Bei Problemen oder Fragen erstelle bitte ein Issue im GitHub-Repository.
 
 ## Lizenz
+Feiertage und Events aus Wiki Aventurica übernommen.
 
 MIT License - Siehe LICENSE-Datei für Details.
